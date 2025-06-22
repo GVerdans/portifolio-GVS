@@ -27,8 +27,14 @@ body {
     font-family: var(--font-body);
     font-size: var(--font-size-padrao);
     color: var(--brancozada);
+
+    opacity: 0;
+    transition: opacity 1s ease;
 }
 
+body.loaded {
+    opacity: 1;
+}
 
 /*__________________NAVZADA */ 
 
@@ -47,6 +53,20 @@ nav {
 
 .container-GVS-txt-nav > h1 {
     color: var(--verde-claro);
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid var(--verde-claro);
+    width: 0;
+    animation: typing 2s steps(20, end) forwards, blink 0.7s step-end infinite alternate;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 20ch; } /* ajuste conforme o tamanho do texto */
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
 }
 
 .container-social-icons-nav {
@@ -115,6 +135,24 @@ span.saudacoes-txt {
     text-align: end;
     list-style: none;
     margin: var(--margin-padrao) auto;
+}
+
+.menus-links {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: menuFadeIn 0.6s forwards;
+}
+
+.menus-links:nth-child(1) { animation-delay: 0.3s; }
+.menus-links:nth-child(2) { animation-delay: 0.5s; }
+.menus-links:nth-child(3) { animation-delay: 0.6s; }
+.menus-links:nth-child(4) { animation-delay: 0.9s; }
+
+@keyframes menuFadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .menus-links > a {
