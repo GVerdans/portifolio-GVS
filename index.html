@@ -28,8 +28,8 @@
     </nav>
 
 
-        <!-- PAGE 1  -->
-    <main>
+    <!-- PAGE 1  -->
+    <main id="page-saudacoes">
         <div class="container-saudacoes">
             <div class="saudacoes">
 
@@ -58,19 +58,66 @@
                 </div>
             </div>
         </div>
-
-        <script>
-            window.addEventListener('DOMContentLoaded', () => {
-                document.body.classList.add('loaded');
-            });
-        </script>
     </main>
 
     <!-- PAGE 2 -->
 
-    <main>
-        
+    <main id="about-gabriel">
+        <div class="container-page2">
+            <div class="container-about-me">
+                <div class="about-me">
+                    <p>Sou <span class="txt-GVS">Gabriel Verdan</span>, 27 anos, desenvolvedor frontend, viciado em
+                        tecnologia e movido por desafios os enfrentando para que me impulsionem ao aprendizado e
+                        evolução.
+                        Acredito no crescimento constante e em construir projetos que façam sentido de verdade. </p>
+                </div>
+            </div>
+
+            <div class="container-hard-skills">
+                <div class="hard-skills">
+                    <h2>Skills</h2>
+                    <ul class="ul-icons-skills">
+                        <li class="skills-icons"><img src="/sources/icons/html-icon.svg" alt="html-icon"></li>
+                        <li class="skills-icons"><img src="/sources/icons/css-icon.svg" alt="css-icon"></li>
+                        <li class="skills-icons"><img src="/sources/icons/js-icon.svg" alt="js-icon"></li>
+                        <li class="skills-icons"><img src="/sources/icons/php-icon.svg" alt="php-icon"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </main>
+
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            document.body.classList.add('loaded');
+        });
+
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+    const icons = document.querySelectorAll('.ul-icons-skills li');
+    const skillsSection = document.querySelector('.hard-skills');
+
+    if (skillsSection) {
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    icons.forEach((icon, i) => {
+                        setTimeout(() => {
+                            icon.classList.add('animated');
+                        }, i * 200); // delay igual ao seu CSS
+                    });
+                    observer.disconnect(); // anima só uma vez
+                }
+            });
+        }, { threshold: 0.3 });
+
+        observer.observe(skillsSection);
+    }
+});
+    </script>
+
 
 
 </body>
