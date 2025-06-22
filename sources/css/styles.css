@@ -109,6 +109,7 @@ span.saudacoes-txt {
     
     width: 100%;
     height: 80vh;
+    /* margin-left: var(--margin-padrao); */
 
     /* border: 1px solid red; */
 }
@@ -119,7 +120,7 @@ span.saudacoes-txt {
     margin: auto;
 
     /* border: 1px solid yellow; */
-    border-radius: 25%;
+    border-radius: 50%;
 
     background-image: url(/sources/images/Morro\ dois\ irmaos.jpg);
     background-size: contain;
@@ -158,6 +159,7 @@ span.saudacoes-txt {
 .menus-links > a {
     text-decoration: none;
     color: var(--verde-claro);
+    position: relative;
 }
 
 .menus-links > a:visited {
@@ -165,9 +167,26 @@ span.saudacoes-txt {
     color: #99DB49;
 }
 
+.menus-links > a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px; /* Ajuste a distância da linha */
+    width: 0;
+    height: 3px;
+    background: var(--verde-escuro);
+    transition: width 0.3s cubic-bezier(.25,.8,.25,1);
+    border-radius: 2px;
+}
+
+.menus-links > a:hover::after,
+.menus-links > a:focus::after {
+    width: 100%;
+}
+
 .menus-links > a:hover {
-    color: var(--verde-escuro);
-    transition: .5s;
+    color: var(--rosa);
+    transition: .2s;
 }
 
 
