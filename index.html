@@ -88,6 +88,33 @@
     </main>
 
 
+    <!-- PAGE 3 -->
+
+    <main id="projects">
+        <div class="container-projetos">
+            <div class="projetos">
+                <div class="projetos-txt">
+                    <p class="projetos-txt-page3">Projetos Desenvolvidos</p>
+                </div>
+            </div>
+
+
+            <div class="container-cards-projetos">
+                <div class="cards-projetos">
+                    <ul class="ul-projetos">
+                        <li class="li-projetos">1</li>
+                        <li class="li-projetos">2</li>
+                        <li class="li-projetos">3</li>
+                        <li class="li-projetos">4</li>
+                        <li class="li-projetos">5</li>
+                        <li class="li-projetos">6</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
     <script>
         window.addEventListener('DOMContentLoaded', () => {
             document.body.classList.add('loaded');
@@ -96,26 +123,26 @@
 
 
         document.addEventListener('DOMContentLoaded', function () {
-    const icons = document.querySelectorAll('.ul-icons-skills li');
-    const skillsSection = document.querySelector('.hard-skills');
+            const icons = document.querySelectorAll('.ul-icons-skills li');
+            const skillsSection = document.querySelector('.hard-skills');
 
-    if (skillsSection) {
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    icons.forEach((icon, i) => {
-                        setTimeout(() => {
-                            icon.classList.add('animated');
-                        }, i * 200); // delay igual ao seu CSS
+            if (skillsSection) {
+                const observer = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            icons.forEach((icon, i) => {
+                                setTimeout(() => {
+                                    icon.classList.add('animated');
+                                }, i * 200); // delay igual ao seu CSS
+                            });
+                            observer.disconnect(); // anima só uma vez
+                        }
                     });
-                    observer.disconnect(); // anima só uma vez
-                }
-            });
-        }, { threshold: 0.3 });
+                }, { threshold: 0.3 });
 
-        observer.observe(skillsSection);
-    }
-});
+                observer.observe(skillsSection);
+            }
+        });
     </script>
 
 
