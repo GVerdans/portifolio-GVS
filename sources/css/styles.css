@@ -94,7 +94,7 @@ nav {
 
 main {
     min-width: 100%;
-    min-height: 96vh;
+    min-height: 100vh;
 }
 
 .container-saudacoes {
@@ -159,6 +159,7 @@ span.saudacoes-txt {
     opacity: 0;
     transform: translateY(20px);
     animation: menuFadeIn 0.6s forwards;
+    margin: var(--margin-padrao);
 }
 
 .menus-links:nth-child(1) {
@@ -323,23 +324,16 @@ li.skills-icons {
 /*_________ page 3 */
 
 .container-projetos {
-    /* background-color: red; */
     min-height: 96vh;
-    border: 1px solid #069E8C;
 }
 
 .projetos {
     height: 20vh;
 }
 
-.projetos-txt {
-    /* border: 1px solid red; */
-    width: fit-content;
-}
-
 p.projetos-txt-page3 {
-    /* width: auto; */
-    border-bottom: var(--border-grosso) var(--rosa);
+    width: 22%;
+    border-bottom: var(--border-grosso) var(--verde-escuro);
     padding-bottom: var(--padding-padrao);
 }
 
@@ -362,7 +356,7 @@ p.projetos-txt-page3 {
     min-height: 100%;
     min-width: 100%;
 
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 
     list-style: none;
@@ -373,10 +367,19 @@ p.projetos-txt-page3 {
 
 .li-projetos {
     width: 250px;
-    height: 350px;
+    height: 450px;
+    margin: var(--margin-padrao);
+
+    flex-wrap: wrap;
 
     background-color: var(--rosa);
     color: var(--verde-escuro);
     border-radius: 20px;
 
+}
+
+.li-projetos:hover {
+    transition: .4s;
+    box-shadow: 0px 5px 10px 10px var(--verde-escuro);
+    transform: translateY(40px) scale(1);
 }
