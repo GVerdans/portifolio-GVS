@@ -59,32 +59,26 @@ nav {
     width: 70%;
 }
 
-.container-GVS-txt-nav>h1 {
-    color: var(--verde-claro);
-    overflow: hidden;
+.container-GVS-txt-nav > h1 {
+    color: transparent;
+    background: linear-gradient(to right, var(--verde-claro), var(--verde-escuro), var(--rosa), var(--bgcolor-body), var(--brancozada));
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 7s linear infinite;
+    border-right: none; /* Remove o cursor */
+    width: auto;        /* Mostra o texto inteiro */
     white-space: nowrap;
-    border-right: 2px solid var(--verde-claro);
-    width: 0;
-    animation: typing 2s steps(20, end) forwards, blink 0.7s step-end infinite alternate;
+    overflow: visible;
 }
 
-@keyframes typing {
-    from {
-        width: 0;
-    }
-
+@keyframes gradientMove {
     to {
-        width: 20ch;
-    }
-
-    /* ajuste conforme o tamanho do texto */
-}
-
-@keyframes blink {
-    50% {
-        border-color: transparent;
+        background-position: 200%;
     }
 }
+
 
 .container-social-icons-nav {
     text-align: end;
