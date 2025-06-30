@@ -91,9 +91,28 @@ nav {
     width: 20%;
 }
 
-.img-social-icon {
-    width: 30px;
+.social-icons {
+    display: flex;
+    justify-content: end;
 }
+
+.img-social-icon {
+    width: 35px;
+    height: 35px;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.4s, filter 0.3s;
+    margin: 10px;
+}
+
+.icon-github {background-image: url('/sources/icons/social/Git-Verde.svg');}
+.icon-github:hover {background-image: url('/sources/icons/social/Git-rosa.svg');}
+
+.icon-linkedin {background-image: url('/sources/icons/social/linkedin-verde.svg');}
+.icon-linkedin:hover {background-image: url('/sources/icons/social/linkedin-rosa.svg');}
+
+.icon-whatsapp {background-image: url('/sources/icons/social/zap-verde.svg');}
+.icon-whatsapp:hover {background-image: url('/sources/icons/social/zap-rosa.svg');}
 
 /*_________ page 1 */
 
