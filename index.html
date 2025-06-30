@@ -77,10 +77,10 @@
                 <div class="hard-skills">
                     <h2>Skills</h2>
                     <ul class="ul-icons-skills">
-                        <li class="skills-icons"><img src="/sources/icons/html-icon.svg" alt="html-icon"></li>
-                        <li class="skills-icons"><img src="/sources/icons/css-icon.svg" alt="css-icon"></li>
-                        <li class="skills-icons"><img src="/sources/icons/js-icon.svg" alt="js-icon"></li>
-                        <li class="skills-icons"><img src="/sources/icons/php-icon.svg" alt="php-icon"></li>
+                        <li class="skills-icons"><img src="/sources/icons/skills/html-icon.svg" alt="html-icon"></li>
+                        <li class="skills-icons"><img src="/sources/icons/skills/css-icon.svg" alt="css-icon"></li>
+                        <li class="skills-icons"><img src="/sources/icons/skills/js-icon.svg" alt="js-icon"></li>
+                        <li class="skills-icons"><img src="/sources/icons/skills/php-icon.svg" alt="php-icon"></li>
                     </ul>
                 </div>
             </div>
@@ -112,44 +112,12 @@
                 </div>
             </div>
         </div>
+        <div class="container-btn-go-top">
+            <button class="btn-go-top" onclick="goTop()">&#65514;</button>
+        </div>
+
     </main>
-
-
-    <script>
-        window.addEventListener('DOMContentLoaded', () => {
-            document.body.classList.add('loaded');
-        });
-
-
-
-        document.addEventListener('DOMContentLoaded', function () {
-            const icons = document.querySelectorAll('.ul-icons-skills li');
-            const skillsSection = document.querySelector('.hard-skills');
-
-            if (skillsSection) {
-                const observer = new IntersectionObserver((entries, observer) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            icons.forEach((icon, i) => {
-                                setTimeout(() => {
-                                    icon.classList.add('animated');
-                                }, i * 200); // delay igual ao seu CSS
-                            });
-                            observer.disconnect(); // anima só uma vez
-                        }
-                    });
-                }, { threshold: 0.3 });
-
-                observer.observe(skillsSection);
-            }
-        });
-
-
-
-    </script>
-
-
-
+    <script src="sources/js/scripts.js"></script>
 </body>
 
 </html>
