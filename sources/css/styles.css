@@ -19,3 +19,8 @@
     --font-body: JetBrains Mono;
     --font-size-padrao: 16pt;
 }
+
+body {
+    font-family: JetBrains Mono;
+    font-size: 10pt;
+}
