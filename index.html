@@ -20,12 +20,12 @@
             box-shadow: 1px 1px 1px 1px lightseagreen;
         }
     </style>
-    <!-- <link rel="stylesheet" href="./sources/css/styles.css"> -->
+    <link rel="stylesheet" href="./sources/css/styles.css">
 </head>
 
 <body>
-    <nav class="container-fluid p-1">
-        <div class="row align-items-center">
+    <nav class="container-fluid">
+        <div class="row align-items-center pt-1">
             <div class="col-12 col-lg-4 text-center text-lg-start ">
                 <h1>&lt; Gabriel Verdan /&gt;</h1>
             </div>
@@ -47,10 +47,20 @@
                     skills e um pouco da minha trajetória nesse velho oeste chamado tecnologia.</p>
                 <p class="px-2">E se quiser, é só me chamar … Prometo que aqui não tem duelo, só trabalho duro.</p>
 
-                <div class="ul-menus text-end list-group mt-5 pt-5">
-                    <a href="#about-gabriel" class="list-group-item list-group-item-action">Sobre este a quem vos fala</a>
-                    <a href="#projects" class="list-group-item list-group-item-action">Projetos</a>
-                    <a href="#" class="list-group-item list-group-item-action" download>Baixar CV</a>
+                <div class="ul-menus mt-5 pt-5">
+                    <ul class="list-group list-group-flush text-center text-lg-end">
+                        <li class="menus-links list-group-item">
+                            <a href="#about-gabriel">Sobre este a quem vos fala</a>
+                        </li>
+
+                        <li class="menus-links list-group-item">
+                            <a href="#projects">Projetos</a>
+                        </li>
+
+                        <li class="menus-links list-group-item">
+                            <a href="#" download>Baixar CV</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
@@ -59,35 +69,41 @@
             </div>
 
             <div class="col-12 col-lg-4">
-                
+
             </div>
         </div>
     </main>
 
     <!-- PAGE 2 -->
 
-    <main id="about-gabriel">
-        <div class="container-page2">
-            <div class="container-about-me">
-                <div class="about-me">
-                    <p>Sou <span class="txt-GVS">Gabriel Verdan</span>, 27 anos, desenvolvedor frontend, viciado em
-                        tecnologia e movido por desafios os enfrentando para que me impulsionem ao aprendizado e
-                        evolução.
-                        Acredito no crescimento constante e em construir projetos que façam sentido de verdade. </p>
-                </div>
+    <main class="container-fluid">
+        <div class="row py-5">
+            <div class="col-12 col-lg-6 py-5">
+                <p>Sou <span class="txt-GVS">Gabriel Verdan</span>, 27 anos, desenvolvedor frontend, viciado em
+                    tecnologia e movido por desafios os enfrentando para que me impulsionem ao aprendizado e evolução.
+                    Acredito no crescimento constante e em construir projetos que façam sentido de verdade. </p>
             </div>
 
-            <div class="container-hard-skills">
-                <div class="hard-skills">
+            <div class="col-12 col-lg-6">
+                <div class="row text-center">
                     <h2>Skills</h2>
-                    <ul class="ul-icons-skills">
-                        <li class="skills-icons"><img src="/sources/icons/skills/html-icon.svg" alt="html-icon"></li>
-                        <li class="skills-icons"><img src="/sources/icons/skills/css-icon.svg" alt="css-icon"></li>
-                        <li class="skills-icons"><img src="/sources/icons/skills/js-icon.svg" alt="js-icon"></li>
-                        <li class="skills-icons"><img src="/sources/icons/skills/php-icon.svg" alt="php-icon"></li>
-                    </ul>
                 </div>
+                <ul class="list-group ul-icons-skills">
+                    <li class="list-group-item skills-icons"><img src="/sources/icons/skills/html-icon.svg"
+                            alt="html-icon" class="img-fluid"></li>
+                    <li class="list-group-item skills-icons"><img src="/sources/icons/skills/css-icon.svg"
+                            alt="css-icon" class="img-fluid"></li>
+                    <li class="list-group-item skills-icons"><img src="/sources/icons/skills/js-icon.svg" alt="js-icon"
+                            class="img-fluid"></li>
+                    <li class="list-group-item skills-icons"><img src="/sources/icons/skills/php-icon.svg"
+                            alt="php-icon" class="img-fluid"></li>
+                </ul>
+
             </div>
+        </div>
+
+        </div>
+        </div>
         </div>
     </main>
 
@@ -103,25 +119,23 @@
             </div>
 
 
-            <div class="container-cards-projetos">
-                <div class="cards-projetos">
-                    <ul class="ul-projetos">
-                        <li class="li-projetos"></li>
-                        <li class="li-projetos"></li>
-                        <li class="li-projetos"></li>
-                        <li class="li-projetos"></li>
-                        <li class="li-projetos"></li>
-                        <li class="li-projetos"></li>
-                    </ul>
-                </div>
+            <div class="container-fluid">
+                <ul class="list-group ul-projetos d-flex flex-column flex-lg-row gap-3">
+                    <li class="list-group-item li-projetos">x</li>
+                    <li class="list-group-item li-projetos">x</li>
+                    <li class="list-group-item li-projetos">x</li>
+                    <li class="list-group-item li-projetos">x</li>
+                    <li class="list-group-item li-projetos">x</li>
+                </ul>
             </div>
         </div>
-        <div class="container-btn-go-top">
-            <button class="btn-go-top" onclick="goTop()">&#65514;</button>
+
+        <div class="container-btn-go-top text-end">
+            <button class="btn btn-primary m-4" onclick="goTop()">&#65514;</button>
         </div>
 
     </main>
-    <!-- <script src="sources/js/scripts.js"></script> -->
+    <script src="sources/js/scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
