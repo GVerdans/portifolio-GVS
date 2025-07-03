@@ -22,5 +22,12 @@
 
 body {
     font-family: JetBrains Mono;
-    font-size: 10pt;
+    font-size: 14pt;
+    background-color: var(--bgcolor-body);
+    color: var(--brancozada);
+}
+
+.nav-GVS {
+    border-bottom: 1px solid var(--border-bottom-nav);
+    color: var(--verde-claro);
 }
