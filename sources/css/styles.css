@@ -22,12 +22,45 @@
 
 body {
     font-family: JetBrains Mono;
-    font-size: 14pt;
+    /* font-size: 14pt; */
     background-color: var(--bgcolor-body);
     color: var(--brancozada);
 }
 
+/* NAV STYLES */
+
 .nav-GVS {
     border-bottom: 1px solid var(--border-bottom-nav);
     color: var(--verde-claro);
+}
+
+.nav-icons {
+    height: 10vh;
+}
+
+.nav-icons img {
+    height: 40px;
+}
+
+/* PAGE 1 STYLES */
+
+.page-1 {
+    border-left: var(--border-grosso) var(--rosa);
+}
+
+.saudacoes-txt {
+    color: var(--verde-claro);
+}
+
+.ul-menus {
+    height: 220px;
+    list-style: none;
+}
+
+.menus-links a {
+    color: var(--verde-claro);
+}
+
+.img-gabriel {
+    height: 70vh;
 }
