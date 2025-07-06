@@ -46,6 +46,7 @@ body {
 
 .page-1 {
     border-left: var(--border-grosso) var(--rosa);
+    font-size: 14pt;
 }
 
 .saudacoes-txt {
@@ -53,7 +54,7 @@ body {
 }
 
 .ul-menus {
-    height: 220px;
+    height: 300px;
     list-style: none;
 }
 
@@ -63,4 +64,16 @@ body {
 
 .img-gabriel {
     height: 70vh;
+}
+
+/* PAGE 2 STYLES */
+
+.txt-GVS {
+    color: var(--verde-escuro);
+}
+
+.skills-icons {
+    /* border: 1px solid red; */
+    background-color: transparent;
+    width: 200px;
 }
