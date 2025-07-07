@@ -138,6 +138,14 @@ body.loaded {
     color: var(--verde-claro);
 }
 
+
+.txt-about-me {
+    height: 50vh;
+}
+
+.teste {
+    border: 1px solid red;
+}
 /* PAGE 3 STYLES */
 
 .tit-projetos {
