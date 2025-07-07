@@ -8,9 +8,9 @@ function goTop() {
 
 window.onscroll = () => {
     const btnGoTop = document.querySelector(".btn-go-top");
-    if (document.body.scrollTop >= 100 || document.documentElement.scrollTop >= 100) {
-        btnGoTop.style.display = "block";
+    if (window.scrollY >= 100) {
+        btnGoTop.classList.add("show");
     } else {
-        btnGoTop.style.display = "none";
+        btnGoTop.classList.remove("show");
     }
 };

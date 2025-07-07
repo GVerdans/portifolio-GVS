@@ -31,7 +31,6 @@ body {
 
 .nav-GVS {
     border-bottom: 1px solid var(--border-bottom-nav);
-    color: var(--verde-claro);
 }
 
 .nav-icons {
@@ -42,6 +41,23 @@ body {
     height: 40px;
 }
 
+#GVS-txt-nav {
+    color: transparent;
+    background: linear-gradient(to right, var(--verde-claro), var(--verde-escuro), var(--rosa), var(--bgcolor-body), var(--brancozada));
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 7s linear infinite;
+    white-space: nowrap;
+    overflow: visible;
+}
+
+@keyframes gradientMove {
+    to {
+        background-position: 200%;
+    }
+}
 
 
 /* PAGE 1 STYLES */
@@ -84,6 +100,10 @@ body {
     border-right: var(--border-grosso) var(--rosa);
 }
 
+#title-skills {
+    color: var(--verde-claro);
+}
+
 /* PAGE 3 STYLES */
 
 .tit-projetos {
@@ -92,6 +112,36 @@ body {
 }
 
 .cards-projetos {
-    width: 400px;
-    height: 300px;
+   width: 100%;
+    max-width: 400px;
+    min-height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-go-top {
+    background-color: var(--verde-escuro);
+    color: var(--bgcolor-body);
+    
+    width: 30px;
+    height: 40px;
+    border: none;
+
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    z-index: 999;
+    transition: opacity .3s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.btn-go-top.show {
+    opacity: .8;
+    pointer-events: auto;
+}
+
+.btn-go-top.show:hover {
+    background-color: var(--verde-claro);
+    transition: .5s;
 }
