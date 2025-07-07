@@ -1,7 +1,6 @@
 'use strict'
 
 // Funções do Botão Voltar ao Topo
-
 function goTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
@@ -14,3 +13,10 @@ window.onscroll = () => {
         btnGoTop.classList.remove("show");
     }
 };
+
+
+
+// Animação de carregamento da página
+window.addEventListener('DOMContentLoaded', function() {
+        document.body.classList.add('loaded');
+    });

@@ -25,6 +25,13 @@ body {
     font-size: 14pt;
     background-color: var(--bgcolor-body);
     color: var(--brancozada);
+
+    opacity: 0;
+    transition: opacity 0.8s;
+}
+
+body.loaded {
+    opacity: 1;
 }
 
 /* NAV STYLES */
@@ -78,6 +85,33 @@ body {
 
 .menus-links a {
     color: var(--verde-claro);
+
+    position: relative;
+    transition: color 0.3s;
+    overflow: hidden;
+}
+
+.menus-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background: var(--verde-escuro);
+    transform: scaleX(0);
+    transition: transform 0.3s;
+    transform-origin: left;
+}
+
+.menus-links a:hover,
+.menus-links a:focus {
+    color: var(--rosa);
+}
+
+.menus-links a:hover::after,
+.menus-links a:focus::after {
+    transform: scaleX(1);
 }
 
 .img-gabriel {
