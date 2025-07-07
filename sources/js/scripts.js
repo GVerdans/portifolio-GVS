@@ -1,36 +1,5 @@
 'use strict'
 
-// Funções de carregamento da página
-
-    // Carregar os elementos
-window.addEventListener('DOMContentLoaded', () => {
-    document.body.classList.add('loaded');
-});
-
-
-    // Efeitos de pular das Hard Skills
-document.addEventListener('DOMContentLoaded', function () {
-    const icons = document.querySelectorAll('.ul-icons-skills li');
-    const skillsSection = document.querySelector('.hard-skills');
-
-    if (skillsSection) {
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    icons.forEach((icon, i) => {
-                        setTimeout(() => {
-                            icon.classList.add('animated');
-                        }, i * 200);
-                    });
-                    observer.disconnect();
-                }
-            });
-        }, { threshold: 0.3 });
-
-        observer.observe(skillsSection);
-    }
-});
-
 // Funções do Botão Voltar ao Topo
 
 function goTop() {

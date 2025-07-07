@@ -22,7 +22,7 @@
 
 body {
     font-family: JetBrains Mono;
-    /* font-size: 14pt; */
+    font-size: 14pt;
     background-color: var(--bgcolor-body);
     color: var(--brancozada);
 }
@@ -41,6 +41,8 @@ body {
 .nav-icons img {
     height: 40px;
 }
+
+
 
 /* PAGE 1 STYLES */
 
@@ -76,4 +78,20 @@ body {
     /* border: 1px solid red; */
     background-color: transparent;
     width: 200px;
+}
+
+#about-me {
+    border-right: var(--border-grosso) var(--rosa);
+}
+
+/* PAGE 3 STYLES */
+
+.tit-projetos {
+    color: var(--verde-claro);
+    border-bottom: var(--border-grosso) var(--rosa);
+}
+
+.cards-projetos {
+    width: 400px;
+    height: 300px;
 }
