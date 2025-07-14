@@ -23,7 +23,6 @@ Este portfólio foi desenvolvido com:
 - **Git + GitHub** – Versionamento e hospedagem
 
 ---
-
 ## 📂 Estrutura do Projeto
 
 /
@@ -33,6 +32,7 @@ Este portfólio foi desenvolvido com:
 ├── /img # Imagens usadas no site
 ├── README.md # Documentação
 └── /bootstrap # Arquivos do Bootstrap (CDN ou local)
+/
 
 ---
 
