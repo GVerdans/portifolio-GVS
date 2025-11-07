@@ -28,15 +28,15 @@ document.querySelectorAll(".social-icon").forEach((img) => {
     let hoverImg = originalImg;
 
     if (img.classList.contains("git-icon")) {
-        hoverImg = "/sources/icons/social/Git-rosa.svg";
+        hoverImg = "./sources/icons/social/Git-rosa.svg";
     }
 
     if (img.classList.contains("linkedin-icon")) {
-        hoverImg = "/sources/icons/social/linkedin-rosa.svg";
+        hoverImg = "./sources/icons/social/linkedin-rosa.svg";
     }
 
     if (img.classList.contains("zap-icon")) {
-        hoverImg = "/sources/icons/social/zap-rosa.svg";
+        hoverImg = "./sources/icons/social/zap-rosa.svg";
     }
 
     img.addEventListener('mouseenter', function () {
