@@ -25,30 +25,14 @@ Sou **Gabriel Verdan dos Santos**, um entusiasta de tecnologia com conhecimentos
 
 ```
 /
-├── index.html         # Página principal
-├── /css               # Estilos customizados (além do Bootstrap)
-├── /js                # Scripts JavaScript
-├── /img               # Imagens usadas no site
-├── README.md          # Documentação do projeto
+├── index.html            # Página principal
+├── sources            
+   ├── /css               # Estilos customizados (além do Bootstrap)
+   ├── /js                # Scripts JavaScript
+   ├── /icons             # Icones usados
+   ├── /images            # Imagens usadas no site
+├── README.md             # Documentação do projeto
 ```
-
----
-
-## 🛠️ Como executar localmente
-
-1. Clone este repositório:
-   ```bash
-   git clone https://github.com/GVerdans/portifolio-GVS.git
-   ```
-2. Acesse a pasta:
-   ```bash
-   cd portifolio-GVS
-   ```
-3. Abra o arquivo `index.html` no seu navegador:
-   ```bash
-   open index.html
-   ```
-   _Ou clique duas vezes no arquivo para abrir._
 
 ---
 
