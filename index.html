@@ -85,8 +85,8 @@
     <!-- PAGE 2 -->
 
     <main class="container-fluid" id="about-gabriel">
-        <div class="row py-5 py-lg-4 my-lg-5">
-            <div class="col-12 col-lg-6 py-5 txt-about-me">
+        <div class="row py-5 py-lg-4 my-lg-5 py-sm-auto">
+            <div class="col-12 col-lg-6 py-5 txt-about-me py-sm-auto">
                 <p id="about-me">Sou <span class="txt-GVS">Gabriel Verdan</span>, 27 anos, desenvolvedor frontend,
                     viciado em
                     tecnologia e movido por desafios os enfrentando para que me impulsionem ao aprendizado e evolução.
@@ -96,10 +96,12 @@
 
 
 
-            <div class="col-12 col-lg-4 offset-lg-2 text-center hard-skills">
-                <h2 class="py-5" id="title-skills">Skills</h2>
+            <div class="col-12 col-lg-12 text-center hard-skills mt-sm-auto">
+                <div class="row mb-5">
+                    <h2 class="py-sm-auto" id="title-skills">Skills</h2>
+                </div>
 
-                <ul class="list-group ul-icons-skills text-end">
+                <ul class="list-group ul-icons-skills list-group-horizontal-md d-flex justify-content-center">
                     <li class="list-group-item skills-icons align-self-center border-0">
                         <img src="./sources/icons/skills/html-icon.svg" alt="html-icon" class="img-fluid">
                     </li>
@@ -109,13 +111,19 @@
                     <li class="list-group-item skills-icons align-self-center border-0">
                         <img src="./sources/icons/skills/js-icon.svg" alt="js-icon" class="img-fluid">
                     </li>
-
-                    <li
-                        class="list-group-item skills-icons align-self-center border-0 d-flex justify-content-center align-items-center border">
-                        <img src="./sources/icons/skills/php-icon.svg" alt="php-icon" class="img-fluid">
-                        <img src="./sources/icons/skills/mysql-icon.svg" alt="mysql-icon" class="img-fluid ms-3">
-                        <img src="./sources/icons/skills/postgre-icon.svg" alt="postgre-icon" class="img-fluid ms-3">
+                    <li class="list-group-item skills-icons align-self-center border-0">
+                        <img src="./sources/icons/skills/php-icon.svg" alt="js-icon" class="img-fluid">
                     </li>
+                    <li class="list-group-item skills-icons align-self-center border-0">
+                        <img src="./sources/icons/skills/mysql-icon.svg" alt="js-icon" class="img-fluid">
+                    </li>
+                    <li class="list-group-item skills-icons align-self-center border-0">
+                        <img src="./sources/icons/skills/postgre-icon.svg" alt="js-icon" class="img-fluid">
+                    </li>
+                    <li class="list-group-item skills-icons align-self-center border-0">
+                        <img src="./sources/icons/skills/Git-Icon.svg" alt="js-icon" class="img-fluid">
+                    </li>
+                    
                 </ul>
 
             </div>
@@ -131,53 +139,52 @@
 
     <!-- PAGE 3 -->
 
-    <main class="container-fluid" id="projects">
+    <main class="container-fluid mb-5" id="projects">
         <div class="row text-center text-lg-start px-2">
-            <div class="col-12 col-lg-2 text-center text-lg-start">
+            <div class="col-12 col-lg-2 text-center text-lg-start mb-sm-5 mb-lg-2">
                 <p class="tit-projetos px-lg-2">Projetos Desenvolvidos</p>
             </div>
 
+            <!-- Projects Cards -->
             <div class="col-12 col-lg-12">
                 <div class="d-flex justify-content-center flex-wrap">
-                    <div class="cards-projetos mb-3 m-md-auto m-lg-5">
+                    <div class="cards-projetos mb-3 m-md-auto m-lg-5 mb-sm-auto">
                         <a href="https://bicalhodespachante.com.br" target="_blank">
                             <img src="./sources/gifs/gif-bicalho-desp.gif" class="img-fluid w-100 h-100"
                                 alt="gif-landing-page">
                         </a>
                         <p class="text-center my-2">Bicalho Despachante</p>
-                        <!-- <p class="text-center mb-2 small text-info">Tecnologias: HTML, CSS, JavaScript</p> -->
                         <p class="text-center mb-2 small">
                             Tecnologias:
-                            <span class="badge rounded-pill bg-primary">HTML</span>
-                            <span class="badge rounded-pill bg-success">CSS</span>
-                            <span class="badge rounded-pill bg-warning text-dark">JavaScript</span>
+                            <span class="badge bg-primary">HTML</span>
+                            <span class="badge bg-success">CSS</span>
+                            <span class="badge bg-warning text-dark">JavaScript</span>
                         </p>
                     </div>
 
-                    <div class="cards-projetos mb-3 m-md-auto m-lg-5">
+                    <div class="cards-projetos mb-3 m-md-auto m-lg-5 mb-sm-auto">
                         <a href="https://gverdans.github.io/Dev-Jr-s-To-Do-List/" target="_blank">
-                            <img src="./sources/gifs/todolist.gif" class="img-fluid w-100 h-100"
+                            <img src="./sources/gifs/todo-list-v2.gif" class="img-fluid w-100 h-100"
                                 alt="gif-todolist-page">
                         </a>
                         <p class="text-center my-2">Jr's To Do List</p>
-                        <!-- <p class="text-center mb-2 small text-info">Tecnologias: HTML, CSS, JavaScript</p> -->
                         <p class="text-center mb-2 small">
                             Tecnologias:
-                            <span class="badge rounded-pill bg-primary">BootStrap</span>
-                            <span class="badge rounded-pill bg-success">CSS</span>
-                            <span class="badge rounded-pill bg-warning text-dark">JavaScript</span>
+                            <span class="badge bg-primary">BootStrap</span>
+                            <span class="badge bg-warning text-dark">JavaScript</span>
                         </p>
+                        <div class="text-center">
+                            <a href="https://github.com/GVerdans/Dev-Jr-s-To-Do-List" target="_blank" class="link-secondary link-offset-2 link-underline link-underline-opacity-0">Repository</a>
+                        </div>
                     </div>
-                    <!-- <div class="cards-projetos border mb-3 m-lg-5 d-flex align-items-center justify-content-center">Coming Soon</div>
-                        <div class="cards-projetos border mb-3 m-lg-5 d-flex align-items-center justify-content-center">Coming Soon</div>
-                        <div class="cards-projetos border mb-3 m-lg-5 d-flex align-items-center justify-content-center">Coming Soon</div> -->
+
                 </div>
             </div>
         </div>
     </main>
 
     <div class="col-12 d-flex justify-content-end">
-        <button class="rounded-4 btn-go-top" onclick="goTop()">&#65514;</button>
+        <button class="rounded-4 btn-go-top fw-bold" onclick="goTop()">&#65514;</button>
     </div>
 
     <script src="sources/js/scripts.js"></script>
