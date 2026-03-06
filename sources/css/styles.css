@@ -138,9 +138,9 @@ body.loaded {
     color: var(--verde-claro);
 }
 
-.txt-about-me {
+/* .txt-about-me {
     height: 50vh;
-}
+} */
 
 /* PAGE 3 STYLES */
 
@@ -150,7 +150,7 @@ body.loaded {
 }
 
 .cards-projetos {
-   width: 100%;
+    width: 100%;
     max-width: 400px;
     min-height: 300px;
     margin-left: auto;
@@ -160,7 +160,7 @@ body.loaded {
 .btn-go-top {
     background-color: var(--verde-escuro);
     color: var(--bgcolor-body);
-    
+
     width: 40px;
     height: 40px;
     border: none;
