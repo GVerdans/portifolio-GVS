@@ -20,6 +20,14 @@
     --font-size-padrao: 16pt;
 }
 
+@media (max-width: 991px) {
+    .page-1 {
+        border-left: none;
+        border-top: var(--border-grosso) var(--rosa);
+        /* Borda vai para cima no mobile */
+    }
+}
+
 body {
     font-family: JetBrains Mono;
     font-size: 14pt;
@@ -49,21 +57,27 @@ body.loaded {
 }
 
 #GVS-txt-nav {
+    font-size: calc(1.8rem + 1vw);
     color: transparent;
-    background: linear-gradient(to right, var(--verde-claro), var(--verde-escuro), var(--rosa), var(--bgcolor-body), var(--brancozada));
+    background: linear-gradient(to right, var(--verde-claro), var(--verde-escuro), var(--rosa), var(--verde-claro));
     background-size: 200%;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: gradientMove 7s linear infinite;
-    white-space: nowrap;
-    overflow: visible;
 }
 
 @keyframes gradientMove {
     to {
         background-position: 200%;
     }
+}
+
+.text-gradient {
+    background: linear-gradient(45deg, var(--verde-claro), var(--verde-escuro));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 
@@ -83,39 +97,55 @@ body.loaded {
     list-style: none;
 }
 
-.menus-links a {
-    color: var(--verde-claro);
-
-    position: relative;
-    transition: color 0.3s;
-    overflow: hidden;
-}
-
-.menus-links a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    width: 100%;
-    height: 2px;
-    background: var(--verde-escuro);
-    transform: scaleX(0);
-    transition: transform 0.3s;
-    transform-origin: left;
-}
-
-.menus-links a:hover,
-.menus-links a:focus {
-    color: var(--rosa);
-}
-
-.menus-links a:hover::after,
-.menus-links a:focus::after {
-    transform: scaleX(1);
-}
-
 .img-gabriel {
-    height: 70vh;
+    max-height: 620px;
+    width: 100%;
+    object-fit: fill;
+}
+
+
+.btn-gvs-primary {
+    background-color: var(--verde-escuro);
+    color: var(--bgcolor-body) !important;
+    font-weight: bold;
+    border: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-gvs-primary:hover {
+    background-color: var(--verde-claro);
+    transform: translateY(-2px);
+}
+
+/* Download CV - Outline em Verde Claro */
+.btn-gvs-outline {
+    background-color: transparent;
+    color: var(--verde-claro) !important;
+    border: 2px solid var(--verde-claro);
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+.btn-gvs-outline:hover {
+    background-color: var(--verde-claro);
+    color: var(--bgcolor-body) !important;
+    transform: translateY(-2px);
+}
+
+/* Contato - Rosa de Destaque */
+.btn-gvs-accent {
+    background-color: var(--rosa);
+    color: var(--brancozada) !important;
+    font-weight: bold;
+    border: none;
+    transition: opacity 0.3s, transform 0.2s;
+}
+
+.btn-gvs-accent:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(158, 6, 74, 0.4);
+    /* Sombra sutil no tom do rosa */
 }
 
 /* PAGE 2 STYLES */
@@ -125,7 +155,6 @@ body.loaded {
 }
 
 .skills-icons {
-    /* border: 1px solid red; */
     background-color: transparent;
     width: 200px;
 }
@@ -138,9 +167,50 @@ body.loaded {
     color: var(--verde-claro);
 }
 
-/* .txt-about-me {
-    height: 50vh;
-} */
+
+/* NOVOS AJUSTES PARA OS CARDS DE SKILLS */
+
+/* Garante o fundo de acordo com sua paleta e aplica uma borda sutil */
+.hard-skills .bg-dark {
+    background-color: rgba(0, 0, 0, 0.25) !important;
+}
+
+.hard-skills .border-secondary {
+    border-color: rgba(255, 255, 255, 0.1) !important;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+/* Efeito de hover nos blocos de skill */
+.hard-skills .card-skill-bloco {
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), border-color 0.3s ease;
+}
+
+.hard-skills .card-skill-bloco:hover {
+    transform: translateY(-6px);
+    border-color: var(--verde-claro) !important;
+    /* Bordas acendem com o verde claro */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3) !important;
+}
+
+.text-gradient {
+    background: linear-gradient(45deg, var(--verde-claro), var(--verde-escuro));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Customização dos Badges de tecnologia dentro dos cards */
+.hard-skills .badge.bg-dark-subtle {
+    background-color: var(--bgcolor-body) !important;
+    color: var(--brancozada) !important;
+    font-size: 11pt;
+    padding: 6px 12px;
+}
+
+/* Alinhamento da linha verde divisória interna do card */
+.hard-skills .border-top.border-secondary {
+    border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
 
 /* PAGE 3 STYLES */
 
