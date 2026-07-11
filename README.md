@@ -1,4 +1,3 @@
-
 # 📁 Portfólio GVS
 
 Bem-vindo(a) ao meu portfólio pessoal! Este projeto foi desenvolvido para apresentar minhas habilidades como desenvolvedor front-end e servir como vitrine de alguns dos meus trabalhos.
@@ -13,10 +12,10 @@ Sou **Gabriel Verdan dos Santos**, um entusiasta de tecnologia com conhecimentos
 
 ## 🚀 Tecnologias Utilizadas
 
-- **HTML5** – Estrutura do site  
-- **CSS3** – Estilização  
-- **Bootstrap 5** – Responsividade e componentes prontos  
-- **JavaScript** – Funcionalidades básicas  
+- **HTML5** – Estrutura do site
+- **CSS3** – Estilização
+- **Bootstrap 5** – Responsividade e componentes prontos
+- **JavaScript** – Funcionalidades básicas
 - **Git & GitHub** – Versionamento e hospedagem
 
 ---
@@ -26,7 +25,7 @@ Sou **Gabriel Verdan dos Santos**, um entusiasta de tecnologia com conhecimentos
 ```
 /
 ├── index.html            # Página principal
-├── sources            
+├── sources
    ├── /css               # Estilos customizados (além do Bootstrap)
    ├── /js                # Scripts JavaScript
    ├── /icons             # Icones usados
@@ -38,8 +37,9 @@ Sou **Gabriel Verdan dos Santos**, um entusiasta de tecnologia com conhecimentos
 
 ## 📫 Contato
 
-- 📧 **Email**: g.verdans@gmail.com  
-- 💼 **LinkedIn**: [linkedin.com/in/gabriel-verdan-418129312](https://linkedin.com/in/gabriel-verdan-418129312)  
+<!-- - 📧 **Email**: g.verdans@gmail.com   -->
+
+- 💼 **LinkedIn**: [linkedin.com/in/gabriel-verdan-418129312](https://linkedin.com/in/gverdan)
 - 💻 **GitHub**: [@GVerdans](https://github.com/GVerdans)
 
 ---
