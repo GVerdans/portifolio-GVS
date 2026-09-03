@@ -69,7 +69,7 @@ export default function StacksPage() {
         <div className="mt-10 grid gap-12 lg:grid-cols-[0.65fr_1.35fr] lg:gap-20">
           <div className="flex flex-col justify-between">
             <div>
-              <p className="max-w-xs text-2xl leading-tight text-(--secondary)/80 sm:text-3xl">
+              <p className="max-w-xs m-auto text-2xl leading-tight text-(--secondary)/80 sm:text-3xl lg:m-0">
                 Uma caixa de ferramentas para cada etapa do produto.
               </p>
               <div className="mt-8 h-px w-20 bg-(--quartiary)" />
@@ -102,7 +102,7 @@ export default function StacksPage() {
                     <div
                       key={stack.name}
                       className="group flex min-h-28 flex-col items-center justify-between border-b border-r border-(--secondary)/30 p-4 text-center transition-colors hover:bg-(--quartiary) hover:text-(--tertiary) sm:p-5 lg:items-start lg:text-left">
-                      <span className="text-3xl transition-transform group-hover:-rotate-6 group-hover:scale-110">
+                      <span className="text-3xl transition-transform group-hover:-rotate-6 group-hover:scale-130">
                         {stack.icon}
                       </span>
                       <span className="mt-5 text-sm">{stack.name}</span>
