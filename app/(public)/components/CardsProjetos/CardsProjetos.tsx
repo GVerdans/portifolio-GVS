@@ -21,7 +21,7 @@ export default function CardsProjetos({
           <Image
             src={projetoteste}
             alt="teste"
-            className="rounded shadow-xl/30"
+            className="rounded shadow-xl/30 transform hover:scale-105 transition"
           />
         </a>
       </div>
