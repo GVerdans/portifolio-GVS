@@ -1,5 +1,5 @@
 import ButtonsHero from '../components/Buttons/Buttons';
-import { FaEnvelope, FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { FaEnvelope, FaGithub, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
 
 export default function Home() {
   return (
@@ -8,14 +8,26 @@ export default function Home() {
         <nav
           className="absolute right-8 top-6 flex items-center gap-6 text-(--tertiary)"
           aria-label="Redes sociais">
-          <a href="#linkedin" aria-label="LinkedIn" title="LinkedIn">
+          <a
+            href="https://wa.me/595982514437"
+            aria-label="WhatsApp"
+            title="WhatsApp">
+            <FaWhatsapp size={26} />
+          </a>
+          <a
+            href="https://linkedin.com/in/gverdan"
+            aria-label="LinkedIn"
+            title="LinkedIn">
             <FaLinkedinIn size={26} />
           </a>
-          <a href="#github" aria-label="GitHub" title="GitHub">
+          <a
+            href="https://github.com/GVerdans"
+            aria-label="GitHub"
+            title="GitHub">
             <FaGithub size={26} />
           </a>
           <a
-            href="mailto:gabriel@example.com"
+            href="mailto:v.santos28py@gmail.com"
             aria-label="E-mail"
             title="E-mail">
             <FaEnvelope size={26} />
