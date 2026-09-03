@@ -27,7 +27,7 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
       lang="pt-BR"
       className={`${abeezee.variable} ${cantarell.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
-        <main className="m-auto min-h-screen w-full lg:min-w-3/4">
+        <main className="m-auto min-h-screen w-full lg:min-w-3/4 border border-red-500">
           {children}
         </main>
       </body>
