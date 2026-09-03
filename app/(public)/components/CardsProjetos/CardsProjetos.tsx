@@ -15,8 +15,8 @@ export default function CardsProjetos({
   repo,
 }: CardsProjetosProps) {
   return (
-    <>
-      <div className="flex flex-col card max-w-100 max-h-100">
+    <div className="max-w-100">
+      <div className="card max-h-100">
         <a href={url}>
           <Image
             src={projetoteste}
@@ -26,12 +26,12 @@ export default function CardsProjetos({
         </a>
       </div>
       <div className="flex flex-col text-center text-(--tertiary) mt-5">
-        <p className="w-full font-bold">{title}</p>
+        <p className="w-full font-bold text-(--primary)">{title}</p>
         <p className="w-full text-sm font-light text-mist-600">{text}</p>
         <a href={repo} className="text-sm text-mist-600 font-bold">
           Repository
         </a>
       </div>
-    </>
+    </div>
   );
 }
