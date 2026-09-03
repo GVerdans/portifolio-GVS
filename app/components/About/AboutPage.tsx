@@ -3,14 +3,15 @@ import Image from 'next/image';
 export default function AboutPage() {
   return (
     <>
-      <section className="relative flex min-h-screen w-full flex-col overflow-hidden rounded-xl py-20 shadow-2xl sm:px-8 md:py-30 md:pl-15 lg:m-auto lg:pl-0 lg:w-3/4 lg:flex-row">
-        <div className="w-full min-w-0 overflow-hidden rounded-r-[42px] lg:mt-0 lg:w-1/2">
-          <div className="flex h-72 min-h-[280px] items-center justify-center rounded-r-[42px] bg-(--primary) mb-5 text-center text-2xl text-(--secondary) lg:h-full lg:mr-10">
+      <section className="relative flex min-h-screen w-full flex-col overflow-hidden rounded-xl py-20 shadow-2xl sm:px-8 md:py-30 md:px-15 lg:m-auto lg:w-3/4 lg:flex-row">
+        <div className="w-full min-w-0 overflow-hidden rounded-[42px] pt-5 lg:mt-0 lg:w-1/2">
+          <div className="flex h-72 min-h-[280px] items-center justify-center rounded-[42px] mb-5 text-center text-2xl text-(--secondary) bg-(--quartiary) lg:h-full lg:mr-10 p-10">
             <Image
-              src="/images/about/verdan-about.webp"
-              width={660}
+              src="/images/about/Gab_dev.jpeg"
+              width={900}
               height={570}
               alt="foto de gabriel seção about"
+              className="rounded-xl"
             />
           </div>
         </div>
