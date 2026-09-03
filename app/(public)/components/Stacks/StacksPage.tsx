@@ -14,7 +14,12 @@ import {
   SiPostgresql,
   SiTailwindcss,
   SiTypescript,
+  SiInsomnia,
+  SiPostman,
+  SiDocker,
+  SiMysql,
 } from 'react-icons/si';
+import { VscVscode } from 'react-icons/vsc';
 
 const frontendStacks = [
   { name: 'React', icon: <FaReact /> },
@@ -31,7 +36,15 @@ const backendStacks = [
   { name: 'Express', icon: <SiExpress /> },
   { name: 'PostgreSQL', icon: <SiPostgresql /> },
   { name: 'MongoDB', icon: <SiMongodb /> },
+  { name: 'MySQL', icon: <SiMysql /> },
+];
+
+const toolStacks = [
+  { name: 'VS Code', icon: <VscVscode /> },
+  { name: 'Insomnia', icon: <SiInsomnia /> },
+  { name: 'Postman', icon: <SiPostman /> },
   { name: 'Git', icon: <FaGitAlt /> },
+  { name: 'Docker', icon: <SiDocker /> },
 ];
 
 export default function StacksPage() {
@@ -47,7 +60,7 @@ export default function StacksPage() {
               Stacks<span className="text-(--quartiary)">.</span>
             </h2>
           </div>
-          <p className="mx-auto max-w-xs text-sm leading-relaxed text-(--secondary)/70 sm:text-right">
+          <p className="mx-auto max-w-xs text-sm leading-relaxed text-(--secondary)/70 lg:mx-0 sm:text-right">
             Ferramentas que transformam ideias em produtos funcionais,
             acessíveis e fáceis de evoluir.
           </p>
@@ -70,10 +83,11 @@ export default function StacksPage() {
             {[
               { name: 'Frontend', stacks: frontendStacks },
               { name: 'Backend', stacks: backendStacks },
+              { name: 'Ferramentas', stacks: toolStacks },
             ].map((stackGroup, groupIndex) => (
               <div
                 key={stackGroup.name}
-                className={groupIndex === 1 ? 'mt-12' : ''}>
+                className={groupIndex > 0 ? 'mt-12' : ''}>
                 <div className="mb-4 flex items-center gap-4">
                   <span className="text-xs text-(--quartiary)">
                     0{groupIndex + 1}
