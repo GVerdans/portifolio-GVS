@@ -1,24 +1,19 @@
 import PageSection from '../Section/PageSection';
 import {
-  FaBootstrap,
   FaCss3Alt,
   FaGitAlt,
   FaHtml5,
   FaJsSquare,
   FaNodeJs,
-  FaPhp,
   FaReact,
 } from 'react-icons/fa';
 import {
   SiExpress,
   SiMongodb,
-  SiMysql,
   SiNextdotjs,
-  SiPrisma,
   SiPostgresql,
   SiTailwindcss,
   SiTypescript,
-  SiVite,
 } from 'react-icons/si';
 
 const frontendStacks = [
@@ -27,27 +22,22 @@ const frontendStacks = [
   { name: 'TypeScript', icon: <SiTypescript /> },
   { name: 'HTML5', icon: <FaHtml5 /> },
   { name: 'CSS3', icon: <FaCss3Alt /> },
-  { name: 'Bootstrap', icon: <FaBootstrap /> },
   { name: 'Tailwind CSS', icon: <SiTailwindcss /> },
   { name: 'Next.js', icon: <SiNextdotjs /> },
-  { name: 'Vite', icon: <SiVite /> },
 ];
 
 const backendStacks = [
   { name: 'Node.js', icon: <FaNodeJs /> },
   { name: 'Express', icon: <SiExpress /> },
-  { name: 'PHP', icon: <FaPhp /> },
   { name: 'PostgreSQL', icon: <SiPostgresql /> },
-  { name: 'MySQL', icon: <SiMysql /> },
   { name: 'MongoDB', icon: <SiMongodb /> },
-  { name: 'Prisma', icon: <SiPrisma /> },
   { name: 'Git', icon: <FaGitAlt /> },
 ];
 
 export default function StacksPage() {
   return (
     <PageSection backgroundClassName="bg-(--tertiary)">
-      <div className="w-full text-(--secondary)">
+      <div className="w-full text-center text-(--secondary) lg:text-left">
         <header className="flex flex-col gap-5 border-b border-(--secondary)/40 pb-8 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <p className="mb-3 text-sm uppercase tracking-[0.3em] text-(--quartiary)">
@@ -57,7 +47,7 @@ export default function StacksPage() {
               Stacks<span className="text-(--quartiary)">.</span>
             </h2>
           </div>
-          <p className="max-w-xs text-sm leading-relaxed text-(--secondary)/70 sm:text-right">
+          <p className="mx-auto max-w-xs text-sm leading-relaxed text-(--secondary)/70 sm:text-right">
             Ferramentas que transformam ideias em produtos funcionais,
             acessíveis e fáceis de evoluir.
           </p>
@@ -97,7 +87,7 @@ export default function StacksPage() {
                   {stackGroup.stacks.map((stack) => (
                     <div
                       key={stack.name}
-                      className="group flex min-h-28 flex-col justify-between border-b border-r border-(--secondary)/30 p-4 transition-colors hover:bg-(--quartiary) hover:text-(--tertiary) sm:p-5">
+                      className="group flex min-h-28 flex-col items-center justify-between border-b border-r border-(--secondary)/30 p-4 text-center transition-colors hover:bg-(--quartiary) hover:text-(--tertiary) sm:p-5 lg:items-start lg:text-left">
                       <span className="text-3xl transition-transform group-hover:-rotate-6 group-hover:scale-110">
                         {stack.icon}
                       </span>
