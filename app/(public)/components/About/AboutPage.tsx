@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import PageSection from '../Section/PageSection';
+import AboutImage from '@/public/images/about/Gab_dev.webp';
 
 export default function AboutPage() {
   return (
@@ -7,7 +8,7 @@ export default function AboutPage() {
       <div className="w-full min-w-0 overflow-hidden rounded-[42px] pt-5 lg:mt-0 lg:w-1/2">
         <div className="flex h-72 min-h-[280px] items-center justify-center rounded-[42px] mb-5 text-center text-2xl text-(--secondary) bg-(--quartiary) lg:h-full lg:mr-10 p-10">
           <Image
-            src="/images/about/Gab_dev.jpeg"
+            src={AboutImage}
             width={900}
             height={570}
             alt="foto de gabriel seção about"

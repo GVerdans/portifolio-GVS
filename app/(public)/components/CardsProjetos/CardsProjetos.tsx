@@ -1,11 +1,11 @@
 import Image from 'next/image';
-import projetoteste from '@/public/images/about/Gab_dev.jpeg';
 
 interface CardsProjetosProps {
   title: string;
   text: string;
   url?: string;
   repo?: string;
+  img: string;
 }
 
 export default function CardsProjetos({
@@ -13,14 +13,17 @@ export default function CardsProjetos({
   text,
   url,
   repo,
+  img,
 }: CardsProjetosProps) {
   return (
     <div className="max-w-100">
       <div className="card max-h-100">
         <a href={url}>
           <Image
-            src={projetoteste}
-            alt="teste"
+            src={img}
+            alt={`Imagem do projeto ${title}`}
+            width={400}
+            height={300}
             className="rounded shadow-xl/30 transform hover:scale-105 transition"
           />
         </a>

@@ -19,6 +19,7 @@ export default function ProjetosPage() {
           <CardsProjetos
             title="Teste"
             text="Teste"
+            img="/images/about/Gab_dev.webp"
             repo="https://linkedin.com/in/gverdan"
           />
         </div>
