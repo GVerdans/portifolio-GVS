@@ -22,7 +22,7 @@ export default function AboutPage() {
           </p>
         </div>
         <div className="texto">
-          <p className="p-2 text-justify text-md text-(--tertiary) lg:text-md">
+          <p className="p-2 text-justify text-sm text-(--tertiary) lg:text-md">
             Desde pequeno, sempre fui curioso sobre tecnologia. Gostava de
             desmontar coisas para entender como funcionavam e passava madrugadas
             esperando o melhor horário para usar a internet discada da iG. Essa
