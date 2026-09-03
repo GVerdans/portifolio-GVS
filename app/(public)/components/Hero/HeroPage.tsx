@@ -1,11 +1,12 @@
 import { FaLinkedinIn, FaWhatsapp, FaGithub, FaEnvelope } from 'react-icons/fa';
 import ButtonsHero from '../Buttons/Buttons';
 import Image from 'next/image';
+import PageSection from '../Section/PageSection';
 
 export default function HeroPage() {
   return (
     <>
-      <section className="relative flex min-h-screen w-full flex-col overflow-hidden rounded-xl bg-(--primary) py-20 shadow-2xl sm:px-8 md:py-30 md:pl-15 lg:m-auto lg:pr-0 lg:w-3/4 lg:flex-row">
+      <PageSection backgroundClassName="bg-(--primary) lg:pr-0">
         <nav
           className="absolute right-8 top-6 flex items-center gap-6 text-(--tertiary)"
           aria-label="Redes sociais">
@@ -70,8 +71,7 @@ export default function HeroPage() {
             />
           </div>
         </div>
-      </section>
-      ;
+      </PageSection>
     </>
   );
 }
