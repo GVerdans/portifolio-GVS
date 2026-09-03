@@ -1,19 +1,24 @@
 import PageSection from '../Section/PageSection';
 import {
+  FaBootstrap,
   FaCss3Alt,
   FaGitAlt,
   FaHtml5,
   FaJsSquare,
   FaNodeJs,
+  FaPhp,
   FaReact,
 } from 'react-icons/fa';
 import {
   SiExpress,
   SiMongodb,
+  SiMysql,
   SiNextdotjs,
+  SiPrisma,
   SiPostgresql,
   SiTailwindcss,
   SiTypescript,
+  SiVite,
 } from 'react-icons/si';
 
 const frontendStacks = [
@@ -22,15 +27,20 @@ const frontendStacks = [
   { name: 'TypeScript', icon: <SiTypescript /> },
   { name: 'HTML5', icon: <FaHtml5 /> },
   { name: 'CSS3', icon: <FaCss3Alt /> },
+  { name: 'Bootstrap', icon: <FaBootstrap /> },
   { name: 'Tailwind CSS', icon: <SiTailwindcss /> },
   { name: 'Next.js', icon: <SiNextdotjs /> },
+  { name: 'Vite', icon: <SiVite /> },
 ];
 
 const backendStacks = [
   { name: 'Node.js', icon: <FaNodeJs /> },
   { name: 'Express', icon: <SiExpress /> },
+  { name: 'PHP', icon: <FaPhp /> },
   { name: 'PostgreSQL', icon: <SiPostgresql /> },
+  { name: 'MySQL', icon: <SiMysql /> },
   { name: 'MongoDB', icon: <SiMongodb /> },
+  { name: 'Prisma', icon: <SiPrisma /> },
   { name: 'Git', icon: <FaGitAlt /> },
 ];
 
