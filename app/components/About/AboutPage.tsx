@@ -15,51 +15,44 @@ export default function AboutPage() {
             />
           </div>
         </div>
-        <div className="flex w-full flex-col border border-red-500 lg:w-1/2">
-          <div className="flex w-full justify-center border border-cyan-500">
+        <div className="flex w-full flex-col lg:w-1/2">
+          <div className="flex w-full justify-center">
             <p className="text-(--tertiary) text-center font-bold text-4xl lg:text-7xl">
               - Sobre Gabriel
             </p>
           </div>
           <div className="texto">
-            <p className="p-2 text-justify text-sm text-(--tertiary) lg:text-md">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
-              itaque, reprehenderit quae nemo officia minus eligendi sint unde
-              fugiat nesciunt a molestiae ipsum, ipsa aut cum asperiores. Cum,
-              deleniti voluptatibus. Officia, nobis voluptatum architecto
-              ratione perferendis debitis facere, praesentium tempore itaque et
-              iste minus quos rerum velit, labore autem facilis iusto omnis! At
-              laborum numquam officiis qui asperiores nobis sunt.
-              Necessitatibus, quae repellat atque molestias excepturi
-              perspiciatis porro fugit ratione cum voluptatum voluptates at?
-              Laborum illum itaque consequuntur quidem mollitia voluptate
-              officia tempora, culpa eveniet deserunt ipsum reiciendis
-              laboriosam doloribus? Iure libero facere tempora maxime iusto
-              eveniet repellendus rem dignissimos eos quasi sed nihil, facilis
-              laboriosam corporis tenetur, molestias voluptatem quidem nostrum
-              voluptate, quas dolorem unde quisquam enim sunt! Architecto?
-              Dolores vel est doloremque provident! Eos debitis earum nesciunt!
-              Voluptatum similique commodi molestiae neque soluta nisi, dicta
-              dolorem numquam recusandae atque eaque temporibus pariatur quos,
-              ullam fuga dignissimos deserunt quibusdam? Molestiae error
-              consequuntur aut voluptatum, dicta quod magnam praesentium quasi
-              alias quis, quas blanditiis voluptates consequatur, quaerat
-              repellendus iure ipsum! Nulla fugit maiores nostrum saepe natus
-              explicabo, minus laborum impedit! Esse hic iure delectus neque
-              unde quaerat ipsa rem, deserunt veniam ducimus? Dicta odio nostrum
-              enim, soluta veniam natus est neque nulla, labore accusantium
-              optio quae saepe blanditiis similique velit! Esse impedit minus
-              soluta nobis, tenetur omnis in reiciendis incidunt magnam
-              quibusdam quasi odio. Est, eius. Laudantium voluptas blanditiis
-              voluptatem aliquam facilis odit exercitationem animi, dolorem
-              assumenda cumque accusamus placeat? Quaerat sint recusandae
-              placeat magni consequuntur dolorem incidunt laudantium, nisi
-              voluptatibus veritatis voluptas consequatur enim omnis. Maxime
-              incidunt ex debitis in, nisi odit laboriosam sequi, at delectus,
-              fugit itaque necessitatibus! Laborum reiciendis quis voluptate
-              earum labore eaque excepturi sint, tempora deleniti dignissimos at
-              quasi eos optio suscipit natus esse cum accusamus perferendis
-              ipsum odio dicta voluptatibus non omnis neque! At.
+            <p className="p-2 text-justify text-md text-(--tertiary) lg:text-md">
+              Desde pequeno, sempre fui curioso sobre tecnologia. Gostava de
+              desmontar coisas para entender como funcionavam e passava
+              madrugadas esperando o melhor horário para usar a internet discada
+              da iG. Essa curiosidade em entender como as coisas funcionam
+              acabou se tornando parte da minha forma de pensar. <br />
+              Antes de atuar profissionalmente com desenvolvimento de software,
+              construí minha experiência em outra área. Passei 9 anos na Marinha
+              do Brasil, atuando principalmente em Recursos Humanos e em
+              atividades administrativas. Foi nesse ambiente que comecei a
+              perceber o potencial da tecnologia para resolver problemas reais.
+              Ao identificar processos repetitivos e deficiências no dia a dia,
+              buscava formas de simplificá-los utilizando tecnologia, criando
+              soluções que reduziam trabalho manual e permitiam que as pessoas
+              concentrassem sua atenção em tarefas que realmente exigiam mais
+              cuidado.
+              <br />
+              Hoje, atuo como <b>Desenvolvedor de Software</b>, criando
+              aplicações e soluções utilizando tecnologias como{' '}
+              <b>JavaScript, TypeScript, React e Node.js</b>.
+              <br />
+              Minha experiência profissional anterior também faz parte do que
+              levo para o desenvolvimento: organização, responsabilidade, visão
+              de processos e, principalmente, a capacidade de entender um
+              problema antes de pensar na solução. Para mim, desenvolver
+              software não é apenas escrever código. É{' '}
+              <b>
+                entender problemas, construir soluções e transformar processos
+                em algo mais simples, eficiente e confiável
+              </b>
+              .
             </p>
           </div>
         </div>
