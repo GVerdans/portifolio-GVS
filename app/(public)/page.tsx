@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import ButtonsHero from '../components/Buttons/Buttons';
 import { FaEnvelope, FaGithub, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
 
@@ -59,7 +60,14 @@ export default function Home() {
         </div>
         <div className="mt-12 w-full min-w-0 overflow-hidden rounded-l-[42px] lg:mt-0 lg:w-1/2">
           <div className="flex h-72 min-h-[280px] items-center justify-center rounded-l-[42px] bg-(--secondary) text-center text-2xl text-(--primary) lg:h-full">
-            <p>foto</p>
+            <Image
+              src="/images/hero/carac-verdan.webp"
+              alt="caricatura-verdan"
+              width={700}
+              height={450}
+              sizes="(max-width: 1023px) 100vw, 50vw"
+              className="h-auto max-h-full w-full max-w-full object-contain"
+            />
           </div>
         </div>
       </section>
