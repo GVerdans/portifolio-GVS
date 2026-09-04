@@ -19,20 +19,26 @@ export default function CardsProjetos({
     <Image
       src={img}
       alt={`Imagem do projeto ${title}`}
-      width={400}
-      height={300}
-      className="h-full w-full rounded object-cover shadow-xl/30 transition hover:scale-105"
+      fill
+      sizes="(max-width: 639px) 100vw, (max-width: 1023px) 45vw, 28vw"
+      className="object-cover transition duration-500 group-hover:scale-105"
     />
   ) : (
-    <div className="flex aspect-[4/3] items-center justify-center rounded bg-(--secondary)/40 text-sm text-(--tertiary)/70">
+    <div className="flex h-full w-full items-center justify-center bg-(--secondary)/40 text-sm text-(--tertiary)/70">
       Imagem do projeto
     </div>
   );
 
   return (
     <div className="max-w-100">
-      <div className="card overflow-hidden">
-        {url ? <a href={url}>{image}</a> : image}
+      <div className="card group relative aspect-[16/10] overflow-hidden rounded-xl border-2 border-(--primary)/20 bg-(--secondary)/20 shadow-lg">
+        {url ? (
+          <a href={url} className="block h-full w-full">
+            {image}
+          </a>
+        ) : (
+          image
+        )}
       </div>
       <div className="flex flex-col text-center mx-2 text-(--tertiary) mt-5">
         <p className="w-full font-bold text-(--primary)">{title}</p>
