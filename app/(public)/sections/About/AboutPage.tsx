@@ -56,7 +56,7 @@ export default function AboutPage() {
             {content.title}
           </h2>
 
-          <p className="text-justify text-sm leading-relaxed text-(--tertiary) sm:text-base lg:text-lg">
+          <p className="text-justify text-sm leading-relaxed text-(--tertiary) sm:text-base lg:text-lg mx-3">
             {content.paragraphs.map((paragraph) => (
               <span key={paragraph} className="mb-4 block last:mb-0">
                 {paragraph}
