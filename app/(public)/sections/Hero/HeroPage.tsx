@@ -55,7 +55,8 @@ export default function HeroPage() {
             <ButtonsHero txt="Sobre mim" src="#sobre" />
             <ButtonsHero
               txt="Curriculum"
-              src="/curriculum.pdf"
+              src="/cv/curriculum.pdf"
+              download="Gabriel-Verdan-CV.pdf"
               style="bg-(--quartiary) text-(--tertiary) hover:bg-(--secondary)"
             />
           </div>
