@@ -5,6 +5,7 @@
   --secondary: #fffecb;
   --tertiary: #423e3b;
   --quartiary: #fea82f;
+  --rojo: #c3423f;
 }
 
 @theme inline {
@@ -19,6 +20,8 @@
     --secondary: #fffecb;
     --tertiary: #423e3b;
     --quartiary: #fea82f;
+    --rojo: #c3423f;
+
 
 
   }
