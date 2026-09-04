@@ -5,25 +5,26 @@ import AboutImage from '@/public/images/about/Gab_dev.webp';
 export default function AboutPage() {
   return (
     <PageSection id="sobre" backgroundClassName="bg-(--secondary)">
-      <div className="w-full min-w-0 overflow-hidden rounded-[42px] pt-5 lg:mt-0 lg:w-1/2">
-        <div className="flex h-72 min-h-[280px] items-center justify-center rounded-[42px] mb-5 text-center text-2xl text-(--secondary) bg-(--quartiary) lg:h-full lg:mr-10 p-10">
+      <div className="w-full min-w-0 overflow-hidden rounded-[42px] pt-5 lg:w-1/2">
+        <div className="mb-5 flex min-h-[280px] items-center justify-center rounded-[42px] bg-(--quartiary) p-4 text-center text-2xl text-(--secondary) sm:p-6 lg:mr-10 lg:h-full lg:p-10">
           <Image
             src={AboutImage}
-            width={900}
-            height={570}
-            alt="foto de gabriel seção about"
-            className="rounded-xl"
+            alt="Foto de Gabriel na seção sobre"
+            sizes="(max-width: 1023px) 100vw, 50vw"
+            className="h-auto w-full max-w-full rounded-xl object-cover"
           />
         </div>
       </div>
-      <div className="flex w-full flex-col lg:w-1/2">
+
+      <div className="flex w-full min-w-0 flex-col lg:w-1/2">
         <div className="flex w-full justify-center">
-          <p className="text-(--tertiary) text-center font-bold text-4xl lg:text-7xl">
+          <h2 className="text-center text-4xl font-bold text-(--tertiary) sm:text-5xl lg:text-7xl">
             - Sobre Gabriel
-          </p>
+          </h2>
         </div>
+
         <div className="texto">
-          <p className="p-2 text-justify text-sm text-(--tertiary) lg:text-lg">
+          <p className="p-2 text-justify text-sm leading-relaxed text-(--tertiary) sm:text-base lg:text-lg">
             Desde pequeno, sempre fui curioso sobre tecnologia. Gostava de
             desmontar coisas para entender como funcionavam e passava madrugadas
             esperando o melhor horário para usar a internet discada da iG. Essa
