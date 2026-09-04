@@ -20,7 +20,7 @@ export default function ProjetosPage() {
             </h2>
           </div>
         </header>
-        <div className="projetos flex flex-row flex-wrap gap-10 mt-10">
+        <div className="projetos flex flex-row flex-wrap justify-center gap-10 mt-10">
           <CardsProjetos
             title="Bicalho Despachante"
             text="Landing page profissional e responsiva para captação de clientes e agendamento de serviços."
