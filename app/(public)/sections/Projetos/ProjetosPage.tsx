@@ -3,7 +3,7 @@ import CardsProjetos from '../../components/CardsProjetos/CardsProjetos';
 
 export default function ProjetosPage() {
   return (
-    <PageSection backgroundClassName="bg-(--quartiary)">
+    <PageSection id="projetos" backgroundClassName="bg-(--quartiary)">
       <div className="flex flex-col w-full h-full">
         <header className="flex flex-col border-b border-(--tertiary)/40 pb-8 text-center lg:text-start">
           <div>

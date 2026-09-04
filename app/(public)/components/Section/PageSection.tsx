@@ -6,11 +6,13 @@ import type { ReactNode } from 'react';
 interface PageSectionProps {
   children: ReactNode;
   backgroundClassName?: string;
+  id?: string;
 }
 
 export default function PageSection({
   children,
   backgroundClassName = '',
+  id,
 }: PageSectionProps) {
   const sectionRef = useRef<HTMLElement>(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -37,6 +39,7 @@ export default function PageSection({
 
   return (
     <section
+      id={id}
       ref={sectionRef}
       className={`section-reveal relative flex min-h-screen snap-start flex-col overflow-hidden rounded-xl py-20 shadow-2xl sm:px-8 md:py-30 md:px-15 lg:m-auto lg:w-3/4 lg:flex-row ${isVisible ? 'section-reveal-visible' : ''} ${backgroundClassName}`}>
       {children}
