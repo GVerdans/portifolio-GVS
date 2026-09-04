@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfólio GVS
 
-## Getting Started
+Portfólio pessoal de Gabriel Verdan, desenvolvido com Next.js para apresentar sua experiência, suas tecnologias e seus principais projetos como Desenvolvedor Full Stack.
 
-First, run the development server:
+## Demo
+
+Visite a versão publicada em [gverdan.dev](https://gverdan.dev).
+
+## Tecnologias
+
+- Next.js 16 com App Router
+- React 19
+- TypeScript
+- Tailwind CSS 4
+- React Icons
+- Vercel
+
+## Recursos
+
+- Seções de apresentação, sobre, tecnologias e projetos
+- Cards com imagens e links para projetos publicados e repositórios
+- Navegação por âncoras entre as seções
+- Scroll snap e animações de entrada durante a rolagem
+- Barra de progresso vertical
+- Botão para voltar ao topo
+- Links para WhatsApp, LinkedIn, GitHub e e-mail
+- Download do currículo em PDF
+- `robots.txt` e `sitemap.xml` para SEO
+
+## Desenvolvimento local
+
+Clone o repositório, instale as dependências e inicie o servidor:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000) no navegador.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run dev      # inicia o ambiente de desenvolvimento
+npm run lint     # executa o ESLint
+npm run build    # gera o build de produção
+npm run start    # inicia o servidor de produção
+```
 
-## Learn More
+## Estrutura principal
 
-To learn more about Next.js, take a look at the following resources:
+```text
+app/
+├── (public)/
+│   ├── components/
+│   ├── sections/
+│   ├── layout.tsx
+│   └── page.tsx
+├── robots.ts
+├── sitemap.ts
+└── globals.css
+public/
+├── cv/
+└── images/
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deploy
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+O projeto está configurado para deploy contínuo na Vercel. Cada push na branch `main` gera uma nova versão em produção.
 
-## Deploy on Vercel
+Para publicar uma alteração:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+git add .
+git commit -m "tipo: descreve a alteração"
+git push origin main
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+O domínio principal é [https://gverdan.dev](https://gverdan.dev).
