@@ -1,11 +1,11 @@
-import Image from 'next/image';
+import Image, { type StaticImageData } from 'next/image';
 
 interface CardsProjetosProps {
   title: string;
   text: string;
   url?: string;
   repo?: string;
-  img: string;
+  img: string | StaticImageData;
 }
 
 export default function CardsProjetos({
