@@ -54,7 +54,7 @@ export default function StacksPage() {
         <header className="flex flex-col gap-5 border-b border-(--secondary)/40 pb-8 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <p className="mb-3 text-sm uppercase tracking-[0.3em] text-(--quartiary)">
-              02 / toolkit
+              @/package.json
             </p>
             <h2 className="text-5xl font-bold leading-none sm:text-7xl lg:text-8xl">
               Stacks<span className="text-(--quartiary)">.</span>
