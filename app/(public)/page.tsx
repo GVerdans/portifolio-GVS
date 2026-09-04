@@ -1,7 +1,7 @@
-import HeroPage from './components/Hero/HeroPage';
-import AboutPage from './components/About/AboutPage';
-import StacksPage from './components/Stacks/StacksPage';
-import ProjetosPage from './components/Projetos/ProjetosPage';
+import HeroPage from './sections/Hero/HeroPage';
+import AboutPage from './sections/About/AboutPage';
+import StacksPage from './sections/Stacks/StacksPage';
+import ProjetosPage from './sections/Projetos/ProjetosPage';
 
 export default function Home() {
   return (

@@ -1,5 +1,5 @@
-import PageSection from '../Section/PageSection';
-import CardsProjetos from '../CardsProjetos/CardsProjetos';
+import PageSection from '../../components/Section/PageSection';
+import CardsProjetos from '../../components/CardsProjetos/CardsProjetos';
 
 export default function ProjetosPage() {
   return (

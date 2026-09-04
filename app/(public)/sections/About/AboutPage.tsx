@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import PageSection from '../Section/PageSection';
+import PageSection from '../../components/Section/PageSection';
 import AboutImage from '@/public/images/about/Gab_dev.webp';
 
 export default function AboutPage() {

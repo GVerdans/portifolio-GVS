@@ -1,7 +1,7 @@
 import { FaLinkedinIn, FaWhatsapp, FaGithub, FaEnvelope } from 'react-icons/fa';
-import ButtonsHero from '../Buttons/Buttons';
+import ButtonsHero from '../../components/Buttons/Buttons';
 import Image from 'next/image';
-import PageSection from '../Section/PageSection';
+import PageSection from '../../components/Section/PageSection';
 
 export default function HeroPage() {
   return (

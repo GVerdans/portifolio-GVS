@@ -1,4 +1,4 @@
-import PageSection from '../Section/PageSection';
+import PageSection from '../../components/Section/PageSection';
 import {
   FaCss3Alt,
   FaGitAlt,
