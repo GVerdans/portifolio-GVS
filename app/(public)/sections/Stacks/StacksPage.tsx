@@ -89,7 +89,7 @@ export default function StacksPage() {
                 key={stackGroup.name}
                 className={groupIndex > 0 ? 'mt-12' : ''}>
                 <div className="mb-4 flex items-center gap-4">
-                  <span className="text-xs text-(--quartiary)">
+                  <span className="text-xs ml-2 lg:ml-0 text-(--quartiary)">
                     0{groupIndex + 1}
                   </span>
                   <h3 className="text-2xl font-bold sm:text-3xl">
