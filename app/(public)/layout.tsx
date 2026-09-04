@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import type { Metadata } from 'next';
 import { ABeeZee, Cantarell } from 'next/font/google';
 import '../globals.css';
@@ -34,6 +35,7 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
       <body className="min-h-full flex flex-col">
         <main className="m-auto min-h-screen w-full lg:min-w-3/4">
           {children}
+          <Analytics />
         </main>
       </body>
     </html>
