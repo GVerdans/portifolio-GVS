@@ -5,9 +5,9 @@ export default function ProjetosPage() {
   return (
     <PageSection backgroundClassName="bg-(--quartiary)">
       <div className="flex flex-col w-full h-full">
-        <header className="flex flex-col gap-5 border-b border-(--primary)/40 pb-8 sm:flex-row sm:items-end sm:justify-between">
+        <header className="flex flex-col border-b border-(--tertiary)/40 pb-8 text-center lg:text-start">
           <div>
-            <p className="mb-3 text-sm uppercase tracking-[0.3em] text-(--secondary)">
+            <p className="mb-3 text-sm uppercase tracking-[0.3em] text-(--primary)">
               @/components/
             </p>
             <h2 className="text-5xl text-(--tertiary) font-bold leading-none sm:text-7xl lg:text-8xl">
