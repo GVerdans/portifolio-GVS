@@ -2,7 +2,7 @@ import HeroPage from './sections/Hero/HeroPage';
 import AboutPage from './sections/About/AboutPage';
 import StacksPage from './sections/Stacks/StacksPage';
 import ProjetosPage from './sections/Projetos/ProjetosPage';
-// import ContatoPage from './sections/Contato/ContatoPage';
+import BackTopBtn from './components/Buttons/BackTopBtn';
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
       <AboutPage />
       <StacksPage />
       <ProjetosPage />
-      {/* <ContatoPage /> */}
+      <BackTopBtn />
     </>
   );
 }
