@@ -17,10 +17,37 @@ export default function ProjetosPage() {
         </header>
         <div className="projetos flex flex-row flex-wrap gap-10 mt-10">
           <CardsProjetos
-            title="Teste"
-            text="Teste"
-            img="/images/about/Gab_dev.webp"
-            repo="https://linkedin.com/in/gverdan"
+            title="Bicalho Despachante"
+            text="Landing page profissional e responsiva para captação de clientes e agendamento de serviços."
+            img=""
+            url="https://bicalhodespachante.com.br/"
+          />
+          <CardsProjetos
+            title="de Andrade Advogados"
+            text="Website institucional responsivo com foco em apresentação e conversão."
+            img=""
+            url="https://deandradeadvassociados.com.br/"
+          />
+          <CardsProjetos
+            title="Projeto Agenda Telefônica"
+            text="Aplicação CRUD para gerenciamento de contatos com persistência em MongoDB."
+            img=""
+            url="https://projeto-agenda-dbn2.onrender.com/"
+            repo="https://github.com/GVerdans/projeto-agenda"
+          />
+          <CardsProjetos
+            title="Sistema de Controle Acadêmico"
+            text="Aplicação full stack para cadastro de alunos, cursos e registros acadêmicos."
+            img=""
+            url="https://controle-academico-front.vercel.app/"
+            repo="https://github.com/GVerdans/controle-academico-front"
+          />
+          <CardsProjetos
+            title="Sistema de Estoque"
+            text="Sistema full stack para gestão de produtos, entradas, saídas e movimentações."
+            img=""
+            url="https://estoque-full-roan.vercel.app/"
+            repo="https://github.com/GVerdans/estoque-full"
           />
         </div>
       </div>
