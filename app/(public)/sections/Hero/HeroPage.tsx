@@ -53,6 +53,11 @@ export default function HeroPage() {
           <div className="buttons mt-12 flex flex-col items-center lg:flex-row lg:mt-auto lg:items-start">
             <ButtonsHero txt="Projetos" src="#projetos" />
             <ButtonsHero txt="Sobre mim" src="#sobre" />
+            <ButtonsHero
+              txt="Curriculum"
+              src="/curriculum.pdf"
+              style="bg-(--quartiary) text-(--tertiary) hover:bg-(--secondary)"
+            />
           </div>
         </div>
         <div className="mt-12 w-full min-w-0 overflow-hidden rounded-l-[42px] lg:mt-0 lg:w-1/2">
