@@ -3,6 +3,7 @@ import AboutPage from './sections/About/AboutPage';
 import StacksPage from './sections/Stacks/StacksPage';
 import ProjetosPage from './sections/Projetos/ProjetosPage';
 import BackTopBtn from './components/Buttons/BackTopBtn';
+import ScrollProgress from './components/ScrollProgress/ScrollProgress';
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <AboutPage />
       <StacksPage />
       <ProjetosPage />
+      <ScrollProgress />
       <BackTopBtn />
     </>
   );
