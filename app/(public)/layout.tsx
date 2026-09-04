@@ -17,9 +17,13 @@ const cantarell = Cantarell({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://gverdan.dev'),
   title: 'Gabriel Verdan - Dev Fullstack',
   description:
     'Portfólio de Gabriel Verdan, Desenvolvedor Full Stack especializado em React, TypeScript e Node.js.',
+  alternates: {
+    canonical: '/',
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<'/'>) {
