@@ -1,9 +1,42 @@
+'use client';
+
 import { FaLinkedinIn, FaWhatsapp, FaGithub, FaEnvelope } from 'react-icons/fa';
 import ButtonsHero from '../../components/Buttons/Buttons';
 import Image from 'next/image';
 import PageSection from '../../components/Section/PageSection';
+import LanguageSwitcher from '../../components/LanguageSwitcher/LanguageSwitcher';
+import { useLanguage } from '../../context/LanguageContext';
 
 export default function HeroPage() {
+  const { language } = useLanguage();
+
+  const content = {
+    pt: {
+      role: 'Desenvolvedor Fullstack',
+      intro:
+        'Fullstack Developer, from Rio de Janeiro, Brazil com sólida experiencia em desenvolvimento de aplicações Web.',
+      projects: 'Projetos',
+      about: 'Sobre mim',
+      curriculum: 'Curriculum',
+    },
+    en: {
+      role: 'Fullstack Developer',
+      intro:
+        'Fullstack Developer from Rio de Janeiro, Brazil with solid experience building web applications.',
+      projects: 'Projects',
+      about: 'About me',
+      curriculum: 'Resume',
+    },
+    es: {
+      role: 'Desarrollador Fullstack',
+      intro:
+        'Desarrollador Fullstack de Río de Janeiro, Brasil, con sólida experiencia en el desarrollo de aplicaciones web.',
+      projects: 'Proyectos',
+      about: 'Sobre mí',
+      curriculum: 'Currículum',
+    },
+  }[language];
+
   return (
     <>
       <PageSection backgroundClassName="bg-(--primary) lg:pr-0">
@@ -34,6 +67,7 @@ export default function HeroPage() {
             title="E-mail">
             <FaEnvelope size={26} />
           </a>
+          <LanguageSwitcher />
         </nav>
 
         <div className="flex w-full min-w-0 flex-col text-center lg:text-start lg:w-1/2">
@@ -41,20 +75,19 @@ export default function HeroPage() {
             Gabriel Verdan
           </p>
           <p className="text-xl text-(--quartiary) md:text-3xl md:font-[400]">
-            Desenvolvedor Fullstack
+            {content.role}
           </p>
           <p className="text-xl font-[400] text-(--tertiary)">
             React, Node e Typescript
           </p>
           <p className="mx-auto lg:m-0 max-w-[370px] break-words text-sm font-[200] pt-5 leading-tight">
-            Fullstack Developer, from Rio de Janeiro, Brazil com sólida
-            experiencia em desenvolvimento de aplicações Web.
+            {content.intro}
           </p>
           <div className="buttons mt-12 flex flex-col items-center lg:flex-row lg:mt-auto lg:items-start">
-            <ButtonsHero txt="Projetos" src="#projetos" />
-            <ButtonsHero txt="Sobre mim" src="#sobre" />
+            <ButtonsHero txt={content.projects} src="#projetos" />
+            <ButtonsHero txt={content.about} src="#sobre" />
             <ButtonsHero
-              txt="Curriculum"
+              txt={content.curriculum}
               src="/cv/curriculum.pdf"
               download="Gabriel-Verdan-CV.pdf"
               style="bg-(--quartiary) text-(--tertiary) hover:bg-(--secondary)"

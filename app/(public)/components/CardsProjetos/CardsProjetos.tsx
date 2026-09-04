@@ -1,4 +1,7 @@
+'use client';
+
 import Image, { type StaticImageData } from 'next/image';
+import { useLanguage } from '../../context/LanguageContext';
 
 interface CardsProjetosProps {
   title: string;
@@ -15,6 +18,13 @@ export default function CardsProjetos({
   repo,
   img,
 }: CardsProjetosProps) {
+  const { language } = useLanguage();
+  const repositoryLabel =
+    language === 'en'
+      ? 'Repository'
+      : language === 'es'
+        ? 'Repositorio'
+        : 'Repositório';
   const image = img ? (
     <Image
       src={img}
@@ -45,7 +55,7 @@ export default function CardsProjetos({
         <p className="w-full text-sm font-light text-mist-600">{text}</p>
         {repo && (
           <a href={repo} className="text-sm text-mist-600 font-bold">
-            Repository
+            {repositoryLabel}
           </a>
         )}
       </div>

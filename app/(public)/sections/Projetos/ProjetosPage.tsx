@@ -1,5 +1,8 @@
+'use client';
+
 import PageSection from '../../components/Section/PageSection';
 import CardsProjetos from '../../components/CardsProjetos/CardsProjetos';
+import { useLanguage } from '../../context/LanguageContext';
 import academicoProj from '@/public/images/projetos/academico-proj.webp';
 import agendaProj from '@/public/images/projetos/agenda-proj.webp';
 import andradeProj from '@/public/images/projetos/andrade-proj.webp';
@@ -7,6 +10,40 @@ import bicalhoProj from '@/public/images/projetos/bicalho-proj.webp';
 import estoqueProj from '@/public/images/projetos/estoque-proj.webp';
 
 export default function ProjetosPage() {
+  const { language } = useLanguage();
+  const content = {
+    pt: {
+      title: 'Projetos',
+      descriptions: [
+        'Landing page profissional e responsiva para captação de clientes e agendamento de serviços.',
+        'Website institucional responsivo com foco em apresentação e conversão.',
+        'Aplicação CRUD para gerenciamento de contatos com persistência em MongoDB.',
+        'Aplicação full stack para cadastro de alunos, cursos e registros acadêmicos.',
+        'Sistema full stack para gestão de produtos, entradas, saídas e movimentações.',
+      ],
+    },
+    en: {
+      title: 'Projects',
+      descriptions: [
+        'Professional, responsive landing page for customer acquisition and service scheduling.',
+        'Responsive institutional website focused on presentation and conversion.',
+        'CRUD application for contact management with MongoDB persistence.',
+        'Full-stack application for managing students, courses, and academic records.',
+        'Full-stack system for managing products, stock entries, exits, and movements.',
+      ],
+    },
+    es: {
+      title: 'Proyectos',
+      descriptions: [
+        'Landing page profesional y responsiva para captar clientes y programar servicios.',
+        'Sitio web institucional responsivo enfocado en presentación y conversión.',
+        'Aplicación CRUD para gestionar contactos con persistencia en MongoDB.',
+        'Aplicación full stack para registrar alumnos, cursos y datos académicos.',
+        'Sistema full stack para gestionar productos, entradas, salidas y movimientos.',
+      ],
+    },
+  }[language];
+
   return (
     <PageSection id="projetos" backgroundClassName="bg-(--quartiary)">
       <div className="flex flex-col w-full h-full">
@@ -16,40 +53,41 @@ export default function ProjetosPage() {
               @/components/
             </p>
             <h2 className="text-5xl text-(--tertiary) font-bold leading-none sm:text-7xl lg:text-8xl">
-              Projetos<span className="text-(--primary)">.</span>
+              {content.title}
+              <span className="text-(--primary)">.</span>
             </h2>
           </div>
         </header>
         <div className="projetos flex flex-row flex-wrap justify-center gap-10 mt-10">
           <CardsProjetos
             title="Bicalho Despachante"
-            text="Landing page profissional e responsiva para captação de clientes e agendamento de serviços."
+            text={content.descriptions[0]}
             img={bicalhoProj}
             url="https://bicalhodespachante.com.br/"
           />
           <CardsProjetos
             title="de Andrade Advogados"
-            text="Website institucional responsivo com foco em apresentação e conversão."
+            text={content.descriptions[1]}
             img={andradeProj}
             url="https://deandradeadvassociados.com.br/"
           />
           <CardsProjetos
             title="Projeto Agenda Telefônica"
-            text="Aplicação CRUD para gerenciamento de contatos com persistência em MongoDB."
+            text={content.descriptions[2]}
             img={agendaProj}
             url="https://projeto-agenda-dbn2.onrender.com/"
             repo="https://github.com/GVerdans/projeto-agenda"
           />
           <CardsProjetos
             title="Sistema de Controle Acadêmico"
-            text="Aplicação full stack para cadastro de alunos, cursos e registros acadêmicos."
+            text={content.descriptions[3]}
             img={academicoProj}
             url="https://controle-academico-front.vercel.app/"
             repo="https://github.com/GVerdans/controle-academico-front"
           />
           <CardsProjetos
             title="Sistema de Estoque"
-            text="Sistema full stack para gestão de produtos, entradas, saídas e movimentações."
+            text={content.descriptions[4]}
             img={estoqueProj}
             url="https://estoque-full-roan.vercel.app/"
             repo="https://github.com/GVerdans/estoque-full"

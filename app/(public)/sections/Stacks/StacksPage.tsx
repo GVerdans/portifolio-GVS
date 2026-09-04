@@ -1,4 +1,7 @@
+'use client';
+
 import PageSection from '../../components/Section/PageSection';
+import { useLanguage } from '../../context/LanguageContext';
 import {
   FaCss3Alt,
   FaGitAlt,
@@ -48,6 +51,28 @@ const toolStacks = [
 ];
 
 export default function StacksPage() {
+  const { language } = useLanguage();
+  const content = {
+    pt: {
+      description:
+        'Ferramentas que transformam ideias em produtos funcionais, acessíveis e fáceis de evoluir.',
+      statement: 'Uma caixa de ferramentas para cada etapa do produto.',
+      groups: ['Frontend', 'Backend', 'Ferramentas'],
+    },
+    en: {
+      description:
+        'Tools that turn ideas into functional, accessible, and easy-to-evolve products.',
+      statement: 'A toolbox for every stage of the product.',
+      groups: ['Frontend', 'Backend', 'Tools'],
+    },
+    es: {
+      description:
+        'Herramientas que convierten ideas en productos funcionales, accesibles y fáciles de evolucionar.',
+      statement: 'Una caja de herramientas para cada etapa del producto.',
+      groups: ['Frontend', 'Backend', 'Herramientas'],
+    },
+  }[language];
+
   return (
     <PageSection backgroundClassName="bg-(--tertiary)">
       <div className="w-full text-center text-(--secondary) lg:text-left">
@@ -61,8 +86,7 @@ export default function StacksPage() {
             </h2>
           </div>
           <p className="mx-auto max-w-xs text-sm leading-relaxed text-(--secondary)/70 lg:mx-0 sm:text-right">
-            Ferramentas que transformam ideias em produtos funcionais,
-            acessíveis e fáceis de evoluir.
+            {content.description}
           </p>
         </header>
 
@@ -70,7 +94,7 @@ export default function StacksPage() {
           <div className="flex flex-col justify-between">
             <div>
               <p className="max-w-xs m-auto text-2xl leading-tight text-(--secondary)/80 sm:text-3xl lg:m-0">
-                Uma caixa de ferramentas para cada etapa do produto.
+                {content.statement}
               </p>
               <div className="mt-8 h-px w-20 bg-(--quartiary)" />
             </div>
@@ -81,9 +105,9 @@ export default function StacksPage() {
 
           <div>
             {[
-              { name: 'Frontend', stacks: frontendStacks },
-              { name: 'Backend', stacks: backendStacks },
-              { name: 'Ferramentas', stacks: toolStacks },
+              { name: content.groups[0], stacks: frontendStacks },
+              { name: content.groups[1], stacks: backendStacks },
+              { name: content.groups[2], stacks: toolStacks },
             ].map((stackGroup, groupIndex) => (
               <div
                 key={stackGroup.name}

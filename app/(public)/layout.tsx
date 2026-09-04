@@ -2,6 +2,7 @@ import { Analytics } from '@vercel/analytics/react';
 import type { Metadata } from 'next';
 import { ABeeZee, Cantarell } from 'next/font/google';
 import '../globals.css';
+import { LanguageProvider } from './context/LanguageContext';
 
 const abeezee = ABeeZee({
   variable: '--font-abeezee',
@@ -34,8 +35,10 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
       className={`${abeezee.variable} ${cantarell.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
         <main className="m-auto min-h-screen w-full lg:min-w-3/4">
-          {children}
-          <Analytics />
+          <LanguageProvider>
+            {children}
+            <Analytics />
+          </LanguageProvider>
         </main>
       </body>
     </html>
