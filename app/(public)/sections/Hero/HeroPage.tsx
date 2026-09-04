@@ -8,7 +8,7 @@ export default function HeroPage() {
     <>
       <PageSection backgroundClassName="bg-(--primary) lg:pr-0">
         <nav
-          className="fixed right-5 top-4 z-50 flex items-center gap-4 rounded-full bg-(--rojo)/85 px-4 py-3 text-(--tertiary) shadow-lg backdrop-blur-sm sm:right-8 sm:top-6 sm:gap-6"
+          className="fixed right-5 top-4 z-50 flex items-center gap-4 rounded-full bg-(--quartiary)/85 px-4 py-3 text-(--tertiary) shadow-lg backdrop-blur-sm sm:right-8 sm:top-6 sm:gap-6"
           aria-label="Redes sociais">
           <a
             href="https://wa.me/595982514437"
